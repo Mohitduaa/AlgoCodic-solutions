@@ -11,9 +11,7 @@ const Letstalk = () => {
               Let`s Transform your vision into reality
             </h1>
             <div className='w-full lg:w-[620px]'>
-              <p className='text-sm'>
-                We believe that solutions should be both powerful and need-specific. That's why our team of experienced professionals works closely with clients to understand their specific needs and create custom solutions that are tailored to their business goals.
-              </p>
+              <p className='text-sm'>{`We believe that solutions should be both powerful and need-specific. That's why our team of experienced professionals works closely with clients to understand their specific needs and create custom solutions that are tailored to their business goals`}</p>
             </div>
           </div>
           <div className='w-full lg:w-auto '>

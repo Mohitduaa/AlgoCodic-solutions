@@ -22,7 +22,7 @@ const Hero_section = () => {
 
           {/* Image Section */}
           <div className="lg:w-1/2 mb-6 lg:mb-0 flex justify-center lg:justify-end">
-            <img src="/images/hero_image.png" alt="Hero Image" className="max-w-full h-auto" />
+            <Image src="/images/hero_image.png" height={500} width={500} alt="Hero Image" className="max-w-full h-auto" />
           </div>
         </div>
       </div>

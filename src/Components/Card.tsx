@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 const Card = () => {
@@ -29,7 +30,7 @@ const Card = () => {
 
           {/* Image Section */}
           <div className="lg:w-1/2 flex justify-center lg:justify-end">
-            <img src="/images/Rectangle 9.png" alt="" className="w-full max-w-[501px] h-auto" />
+            <Image src="/images/Rectangle 9.png" alt="" height={300} width={300} className="w-full max-w-[501px] h-auto" />
           </div>
         </div>
       </div>

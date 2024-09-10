@@ -50,7 +50,7 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Menu */}
-        <div className={`md:hidden absolute top-20 right-0 w-[55%] bg-gray-100 shadow-lg ${isMobileMenuOpen ? 'block' : 'hidden'}`}>
+        <div className={`md:hidden absolute top-20 right-0 w-[100%] h-[100%] bg-gray-100 shadow-lg ${isMobileMenuOpen ? 'block' : 'hidden'}`}>
           <ul className='flex flex-col items-center space-y-6 py-4'>
             <Link href="/" onClick={toggleMobileMenu} className='text-base font-medium leading-[25px]  '>Home</Link>
             <li className='relative'>
