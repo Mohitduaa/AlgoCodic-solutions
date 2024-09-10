@@ -47,10 +47,10 @@ const page = () => {
       css: "flex-row-reverse"
     },
     {
-      heading: "Hartron Deo",
+      heading: "Hartron DEO",
       paragraph: "Explore the Hartron Deo and learn how to become a skilled Data Entry Operator.",
       btn: "Enroll Now",
-      image: "/images/data.png",
+      image: "/images/dataentry.png",
       css: "flex"
     }
   ];
@@ -65,11 +65,11 @@ const page = () => {
         {
           courses.map((item) => {
             return (
-              <div key={item.heading} className={`${item.css} flex flex-col md:flex-row justify-center items-center gap-5 shadow-xl mb-10 mx-4 md:mx-20 py-10 px-4 md:px-10 bg-gradient-to-r from-blue-300 via-blue-200 to-gray-100 rounded-xl`}>
+              <div key={item.heading} className={`md:${item.css} flex  flex-col-reverse md:flex-row justify-center items-center gap-5 shadow-xl mb-10 mx-4 md:mx-20 py-10 px-4 md:px-10 bg-gradient-to-r from-blue-300 via-blue-200 to-gray-100 rounded-xl`}>
                 <div className='w-full md:w-[50%]'>
                   <h1 className='text-2xl md:text-4xl font-bold mb-2'>{item.heading}</h1>
                   <p className='text-base md:text-lg text-gray-500 mb-6'>{item.paragraph}</p>
-                  <Link href="/Budget_contact" className='text bg-black text-white px-4 py-3 rounded-[10px] hover: ease-in-out duration-300 hover:scale-105'>{item.btn}</Link>
+                  <Link href="/Budget_contact" className='mx-[90px] md:ml-0 bg-black text-white px-4 py-3 rounded-[10px]  hover:scale-105 ease-in-out duration-300'>{item.btn}</Link>
                 </div>
                 <div className='w-full md:w-[50%] flex justify-center'>
                   <Image src={item.image} alt="" height={300} width={500} className="max-w-full h-auto" />

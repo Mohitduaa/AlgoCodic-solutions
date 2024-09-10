@@ -18,11 +18,11 @@ const Navbar = () => {
   };
 
   return (
-    <>
+    <nav className='sticky top-0 bg-white shadow-md z-50'>
       <div className='flex justify-between items-center px-6 py-4 md:px-10'>
-        <div className='flex items-center gap-2 whitespace-nowrap'>
-          <Image src="/images/logo.png" alt="logo" height={65} width={70} />
-          <h1 className=' md:text-2xl font-medium'>AlgoCodic Solutions</h1>
+        <div className='flex items-center gap-2'>
+          <Image src="/images/logo.png" alt="logo" height={50} width={60} />
+          <h1 className='text-xl md:text-2xl font-medium whitespace-nowrap'>AlgoCodic Solutions</h1>
         </div>
 
         {/* Hamburger Icon for Mobile */}
@@ -35,7 +35,7 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Menu */}
-        <div className={`hidden md:flex gap-8`}>
+        <div className='hidden md:flex gap-8 items-center'>
           <Link href="/" className='text-base font-medium leading-[25px]'>Home</Link>
           <li className='list-none relative group'>
             <span className='text-base font-medium leading-[25px] cursor-pointer'>Services</span>
@@ -49,31 +49,34 @@ const Navbar = () => {
           <Link href="/tools" className='text-base font-medium leading-[25px]'>Tools</Link>
         </div>
 
-        {/* Mobile Menu */}
-        <div className={`md:hidden absolute top-20 right-0 w-[100%] h-[100%] bg-gray-100 shadow-lg ${isMobileMenuOpen ? 'block' : 'hidden'}`}>
-          <ul className='flex flex-col items-center space-y-6 py-4'>
-            <Link href="/" onClick={toggleMobileMenu} className='text-base font-medium leading-[25px]  '>Home</Link>
-            <li className='relative'>
-              <span onClick={toggleServicesDropdown} className='text-base font-medium leading-[25px] cursor-pointer '>Services</span>
-              {isServicesDropdownOpen && (
-                <ul className='bg-gray-100 shadow-lg p-2 space-y-2'>
-                  <li><Link href="/services" onClick={toggleMobileMenu} className='block w-[175px] px-4 py-1 text-black hover:text-red-500'>Web Development</Link></li>           
-                  <li><Link href="/Digital_markting" onClick={toggleMobileMenu} className='block px-4 py-1 text-black hover:text-red-500'>Digital Marketing</Link></li>
-                </ul>
-              )}
-            </li>
-            <Link href="/Courses" onClick={toggleMobileMenu} className='text-base font-medium leading-[25px] '>Courses</Link>
-            <Link href="/career" onClick={toggleMobileMenu} className='text-base font-medium leading-[25px] '>Career</Link>
-            <Link href="/tools" onClick={toggleMobileMenu} className='text-base font-medium leading-[25px]  '>Tools</Link>
-          </ul>
-        </div>
-
         {/* Contact Us Button */}
         <div className='hidden md:block bg-gradient-to-r from-blue-300 via-blue-200 to-gray-100 px-4 py-1 rounded-sm border border-black'>
           <Link href="/Letstalk" className='text-sm font-semibold leading-[14px]'>Contact Us</Link>
         </div>
       </div>
-    </>
+
+      {/* Mobile Menu */}
+      <div className={`md:hidden fixed top-0 left-0 w-full h-full bg-gray-100 shadow-lg transition-transform duration-300 ease-in-out ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+        <div className='flex justify-end p-4'>
+          <FaTimes className='text-2xl cursor-pointer' onClick={toggleMobileMenu} />
+        </div>
+        <ul className='flex flex-col items-center space-y-6 py-4'>
+          <Link href="/" onClick={toggleMobileMenu} className='text-base font-medium leading-[25px]'>Home</Link>
+          <li className='relative'>
+            <span onClick={toggleServicesDropdown} className='text-base font-medium leading-[25px] cursor-pointer'>Services</span>
+            {isServicesDropdownOpen && (
+              <ul className='bg-gray-100 shadow-lg p-2 space-y-2'>
+                <li><Link href="/services" onClick={toggleMobileMenu} className='block w-[175px] px-4 py-1 text-black hover:text-red-500'>Web Development</Link></li>           
+                <li><Link href="/Digital_markting" onClick={toggleMobileMenu} className='block px-4 py-1 text-black hover:text-red-500'>Digital Marketing</Link></li>
+              </ul>
+            )}
+          </li>
+          <Link href="/Courses" onClick={toggleMobileMenu} className='text-base font-medium leading-[25px]'>Courses</Link>
+          <Link href="/career" onClick={toggleMobileMenu} className='text-base font-medium leading-[25px]'>Career</Link>
+          <Link href="/tools" onClick={toggleMobileMenu} className='text-base font-medium leading-[25px]'>Tools</Link>
+        </ul>
+      </div>
+    </nav>
   );
 }
 

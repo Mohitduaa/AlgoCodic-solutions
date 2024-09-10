@@ -5,7 +5,7 @@ const Great_software = () => {
   return (
     <>
       <div className='px-4 md:px-8 lg:px-16'>
-        <div className='flex flex-col justify-center items-center pt-10'>
+        <div className='flex flex-col-reverse justify-center items-center pt-10'>
           <div className='bg-[#57007B] h-[4px] w-[20%] md:w-[10%]' />
           <p className='text-[24px] md:text-[30px] lg:text-[35px] text-[#1a202c] font-normal leading-[36px] md:leading-[45px] lg:leading-[55px] font-[Inter] text-center'>
             Way of building
@@ -14,7 +14,7 @@ const Great_software = () => {
             Great Software
           </h1>
         </div>
-        <div className='flex flex-col md:flex-row justify-center items-center gap-6 md:gap-10 py-10'>
+        <div className='flex flex-col-reverse md:flex-row justify-center items-center gap-6 md:gap-10 py-10'>
           <div className='flex-1 md:w-1/2'>
             <h1 className='text-[20px] md:text-[28px] font-semibold leading-[28px] md:leading-[38.09px] font-[Inter] mb-4 md:mb-8'>
               Build the right team to scale
@@ -43,12 +43,12 @@ const Great_software = () => {
               </div>
             </div>
           </div>
-          <div className='flex-1 md:w-1/2'>
+          <div className='w-[100%] md:w-1/2'>
             <Image src="/images/Rectangle 17.png" alt="" width={575} height={400} layout="responsive" />
           </div>
         </div>
 
-        <div className='flex flex-col md:flex-row-reverse justify-center items-center gap-6 md:gap-10 py-10'>
+        <div className='flex flex-col-reverse md:flex-row-reverse justify-center items-center gap-6 md:gap-10 py-10'>
           <div className='flex-1 md:w-1/2'>
             <h1 className='text-[20px] md:text-[28px] font-semibold leading-[28px] md:leading-[38.09px] font-[Inter] mb-4 md:mb-8'>
               Build the right team to scale
@@ -77,12 +77,12 @@ const Great_software = () => {
               </div>
             </div>
           </div>
-          <div className='flex-1 md:w-1/2'>
+          <div className='w-[100%] md:w-1/2'>
             <Image src="/images/Rectangle 18.png" alt="" width={575} height={400} layout="responsive" />
           </div>
         </div>
 
-        <div className='flex flex-col md:flex-row justify-center items-center gap-6 md:gap-10 py-10'>
+        <div className='flex flex-col-reverse md:flex-row justify-center items-center gap-6 md:gap-10 py-10'>
           <div className='flex-1 md:w-1/2'>
             <h1 className='text-[20px] md:text-[28px] font-semibold leading-[28px] md:leading-[38.09px] font-[Inter] mb-4 md:mb-8'>
               Build the right team to scale
@@ -111,7 +111,7 @@ const Great_software = () => {
               </div>
             </div>
           </div>
-          <div className='flex-1 md:w-1/2'>
+          <div className='w-[100%] md:w-1/2'>
             <Image src="/images/Rectangle 19.png" alt="" width={575} height={400} layout="responsive" />
           </div>
         </div>

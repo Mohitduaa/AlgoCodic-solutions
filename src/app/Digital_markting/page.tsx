@@ -106,7 +106,7 @@ const WebDevelopment = () => {
           <h1 className='text-3xl md:text-4xl font-extrabold mb-4'>Features Offered</h1>
           <p className='text-sm md:text-base'>Allow us to provide you with a professional and thorough explanation of the subject matter, leaving no stone unturned and ensuring a complete understanding.</p>
         </div>
-        <div className='flex py-10 md:py-20 flex-wrap justify-start gap-4 px-5'>
+        <div className='flex py-10 md:py-20 flex-wrap justify-start gap-4 px-5 md:px-[68px]'>
           {
             Featured.map((item) => {
               return (

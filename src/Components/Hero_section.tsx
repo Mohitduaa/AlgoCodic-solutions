@@ -5,8 +5,7 @@ const Hero_section = () => {
   return (
     <>
       <div className="px-4 py-8 lg:px-10 lg:py-16">
-        <div className="flex flex-col-reverse lg:flex-row justify-center items-center">
-          {/* Text Section */}
+        <div className="flex justify-center items-center lg:mx-10 flex-col-reverse lg:flex-row ">
           <div className="text-center lg:text-left lg:w-1/2">
             <h1 className="text-[32px] sm:text-[45px] font-light font-[Inter] leading-tight sm:leading-[71px] mb-4">
               Great <span className="text-[#dd4296] font-bold">Product</span> is <br className="hidden lg:block" />
@@ -20,7 +19,6 @@ const Hero_section = () => {
             </button>
           </div>
 
-          {/* Image Section */}
           <div className="lg:w-1/2 mb-6 lg:mb-0 flex justify-center lg:justify-end">
             <Image src="/images/hero_image.png" height={500} width={500} alt="Hero Image" className="max-w-full h-auto" />
           </div>

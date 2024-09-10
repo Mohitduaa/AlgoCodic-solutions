@@ -5,8 +5,7 @@ const Card = () => {
   return (
     <>
       <div className="px-4 py-8 lg:px-20 lg:py-16">
-        <div className="flex flex-col lg:flex-row justify-between items-center gap-8">
-          {/* Text Section */}
+        <div className="flex flex-col-reverse lg:flex-row justify-between items-center gap-8">
           <div className="text-center lg:text-left lg:w-1/2">
             <h1 className="text-[28px] sm:text-[35px] font-normal font-[Inter] leading-[40px] sm:leading-[55px] mb-4">
               Leading companies trust us <br className="hidden lg:block" />
@@ -27,10 +26,8 @@ const Card = () => {
               See more Information →
             </p>
           </div>
-
-          {/* Image Section */}
           <div className="lg:w-1/2 flex justify-center lg:justify-end">
-            <Image src="/images/Rectangle 9.png" alt="" height={300} width={300} className="w-full max-w-[501px] h-auto" />
+            <Image src="/images/Rectangle 9.png" alt="" height={500} width={500} className="w-full max-w-[501px] h-auto" />
           </div>
         </div>
       </div>
